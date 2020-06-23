@@ -5,7 +5,7 @@ WORKDIR /go/src/github.com/helm/chart-testing/v3/
 COPY . .
 RUN go get github.com/helm/chart-testing/v3/ct
 
-FROM alpine
+FROM alpine:3.11
 
 RUN apk --no-cache add \
     curl \
